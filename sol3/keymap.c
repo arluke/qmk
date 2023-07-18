@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,           KC_5,     KC_6,                      KC_MUTE, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS,
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,           KC_T,     KC_BTN1,                   KC_VOLU, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
         KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,           KC_G,     CW_TOGG,                   KC_VOLD, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,           KC_B,     KC_LCBR,                   KC_RCBR, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SC_SENT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,           KC_B,     KC_LBRC,                   KC_RBRC, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SC_SENT,
         KC_LCTL, KC_APP,  KC_LGUI, KC_LALT, LCTL(KC_LSFT),  KC_SPC,   MO(2),   MO(1),   MO(1),   KC_BSLS, KC_SPC,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_RCTL,
 
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                              KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_FUNCT] = LAYOUT(
         KC_PSCR, KC_NO,   KC_NO,   KC_NO,   KC_NO,          KC_NO,    KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_EQL,
         KC_TAB,  KC_F1,   KC_F2,   KC_F3,   KC_F4,          KC_NO,    KC_NO,                     KC_NO,   KC_PGUP, KC_HOME, KC_NO,   KC_END,  KC_NO,   KC_DEL,
-        KC_ESC,  KC_F5,   KC_F6,   KC_F7,   KC_F8,          KC_NO,    KC_NO,                     KC_NO,   KC_PGDN, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_INS,
+        KC_ESC,  KC_F5,   KC_F6,   KC_F7,   KC_F8,          KC_NO,    KC_NO,                     KC_NO,   KC_PGDN, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_QUOT,
         KC_LSFT, KC_F9,   KC_F10,  KC_F11,  KC_F12,         KC_NO,    KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   SC_SENT,
         KC_LCTL, KC_APP,  KC_LGUI, KC_LALT, KC_NO,          KC_SPC,   KC_NO,   KC_TRNS, KC_TRNS, KC_NO,   KC_SPC,  KC_CAPS, KC_NUM,  KC_SCRL, KC_NO,   KC_RCTL,
 
@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_EXTRA] = LAYOUT(
         KC_NO,   KC_NO,   RGB_VAI, RGB_SAI, RGB_HUI,        RGB_MOD,  RGB_TOG,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  
-        KC_NO,   KC_NO,   RGB_VAD, RGB_SAD, RGB_HUD,        RGB_RMOD, RGB_M_P,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  
+        KC_NO,   KC_NO,   RGB_VAD, RGB_SAD, RGB_HUD,        RGB_RMOD, RGB_M_P,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_INS,  
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,          KC_NO,    KC_NO,                     KC_NO,   KC_MSTP, KC_MPRV, KC_MPLY, KC_MNXT, KC_NO,   KC_NO,   
         NK_ON,   NK_OFF,  KC_NO,   KC_NO,   KC_NO,          KC_NO,    KC_NO,                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   
         GUI_ON,  GUI_OFF, KC_NO,   KC_NO,   KC_NO,          KC_NO,    KC_TRNS, KC_NO,   KC_NO,   KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  
