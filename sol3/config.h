@@ -22,3 +22,5 @@
 
 #define STM32_ONBOARD_EEPROM_SIZE 2048
 
+// Set tap/hold timing -- in ms, default 200ms
+#define TAPPING_TERM 250
